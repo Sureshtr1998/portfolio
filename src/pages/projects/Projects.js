@@ -13,6 +13,7 @@ import { projects } from "../../portfolio";
 import "./Projects.css";
 import Cards from '../../components/Cards/Cards'
 import ProjectsImg from "./ProjectsImg";
+// import HumansImg from "./HumansImg";
 
 class Projects extends Component {
   render() {
@@ -40,6 +41,7 @@ class Projects extends Component {
                   {projectsHeader["description"]}
                 </p>
               </div>
+              {/* <HumansImg theme={theme}/> */}
             </div>
           </Fade>
         </div>

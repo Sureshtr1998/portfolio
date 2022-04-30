@@ -9,6 +9,39 @@
 }
 
 .projects-heading-div {
+  margin-top:50px;
+  display: flex;
+}
+
+.projects-heading-div > * {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .projects-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .subTitle{
+    font-size: 20px;
+  }
+
+  .projects-heading-div {
+    flex-direction: column;
+  }
+}
+
+.projects-heading-img-div{
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-heading-img-div> * {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-heading-div {
   display: flex;
 }
 .projects-heading-text-div{
