@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
-// import Educations from "../../containers/education/Educations";
+
 import Certifications from "../../containers/certifications/Certifications";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
@@ -26,14 +26,14 @@ class Education extends Component {
               </div>
               <div className="heading-text-div">
                 <h1 className="heading-text" style={{ color: theme.orange }}>
-                Education &#38; Certifications
+                  Education &#38; Certifications
                 </h1>
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
                   Basic Qualification and Certifcations
                 </h3>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
-                <div className='graduationImg'>
-                <GraduationImg />
+                <div className="graduationImg">
+                  <GraduationImg />
                 </div>
               </div>
             </div>
