@@ -65,12 +65,24 @@ class Contact extends Component {
                 >
                   {phoneSection["title"]}
                 </h1>
+                <div className='whatsappNum'>
                 <p
                   className="contact-header-detail-text subTitle"
                   style={{ color: theme.blue }}
                 >
                   {phoneSection["subtitle"]}
                 </p>
+                <a target='_blank' rel='noopener noreferrer' href='https://wa.me/+919632972404'>
+                <span 
+                className='iconify'
+                data-icon='simple-icons:whatsapp'
+                style={{color: 'green', marginBottom:'15px', marginLeft:'10px'}}
+                data-inline='false'
+                >
+
+                </span>
+                  </a>
+                  </div>
               </div>
             </div>
           </Fade>

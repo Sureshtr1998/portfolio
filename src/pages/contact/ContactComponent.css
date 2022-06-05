@@ -10,6 +10,11 @@
 .contact-heading-div {
   display: flex;
 }
+.whatsappNum {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
 
 .blog-heading-div {
   display: flex;
