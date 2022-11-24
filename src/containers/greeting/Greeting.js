@@ -9,6 +9,7 @@ import WelcomeImg from "./WelcomeImg";
 import Typewriter from "typewriter-effect";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import { competitiveSites } from "../../portfolio";
+import { NavLink } from "react-router-dom";
 export default function Greeting(props) {
   const theme = props.theme;
   return (
@@ -58,7 +59,7 @@ export default function Greeting(props) {
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="/contact" />
+                <NavLink  className="main-button" to="/contact" > Contact Me </NavLink>
                 <Button
                   text="See my resume"
                   newTab={true}
