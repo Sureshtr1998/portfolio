@@ -31,14 +31,27 @@ class Header extends Component {
         <SeoHeader />
         <div>
           <header className="header" fixed="top">
-            <div className="leftHeaderSide" > 
+          <NavLink to='/' className="logo">
+          {/* <div  className='codeIcon'>
+           <CodeIcon/>
+           </div> */}
+            <div  className='codeIcon'>
+           <CodeIcon/>
+           </div>
+         
+            </NavLink>
+           
+            <div className="soundBar"> 
+          <SoundBar/>
+           </div>
+            {/* <div className="leftHeaderSide" > 
               <div  className='codeIcon'>
            <CodeIcon/>
            </div>
            <div className="soundBar"> 
           <SoundBar/>
            </div>
-           </div>
+           </div> */}
          
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">

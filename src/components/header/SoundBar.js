@@ -7,8 +7,8 @@ const Box = styled.div`
 display:flex;
 cursor:pointer;
 position:fixed;
-left:8rem;
-top:2.5rem;
+left:10rem;
+top:2.4rem;
 z-index:10;
 margin-left: 30px;
 
@@ -46,7 +46,7 @@ border: 1px solid black;
 
 animation:${play} 1s ease infinite;
 animation-play-state: ${props => props.click ? "running" : "paused"};
-height: 1.2rem;
+height: 1.4rem;
 width: 2px;
 margin:0 0.1rem
 `
