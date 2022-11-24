@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -11,14 +10,13 @@ import { contactPageData } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
+//const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div className="contact-main">
-        <Header themeChange={this.props.themeChange} theme={theme} />
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
@@ -59,7 +57,7 @@ class Contact extends Component {
                 >
                   {addressSection["subtitle"]}
                 </p>
-                <h1
+                {/* <h1
                   className="address-heading-text"
                   style={{ color: theme.text }}
                 >
@@ -82,7 +80,7 @@ class Contact extends Component {
 
                 </span>
                   </a>
-                  </div>
+                  </div> */}
               </div>
             </div>
           </Fade>

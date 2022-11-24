@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
 import { Container, Row, Col } from "react-bootstrap";
@@ -20,7 +19,6 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        <Header themeChange={this.props.themeChange} theme={theme} />
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">

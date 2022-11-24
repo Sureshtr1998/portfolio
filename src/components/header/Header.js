@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "./Header.css";
 //import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 // import { Navbar } from "react-bootstrap";
-import logo from "../../assets/logo/logo-01.png";
+import {CodeIcon} from './codeIcon'
+import SoundBar from './SoundBar'
 const onMouseEnter = (event, color) => {
   const el = event.target;
   el.style.backgroundColor = color;
@@ -26,15 +26,20 @@ class Header extends Component {
   // }
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/splash" : "home";
     return (
       <div style={{backgroundColor: theme.body}} className='fixedHeader' >
         <SeoHeader />
         <div>
           <header className="header" fixed="top">
-            <NavLink to={link} tag={Link} className="logo">
-              <img className="logo_header" src={logo} alt="logo" />
-            </NavLink>
+            <div className="leftHeaderSide" > 
+              <div  className='codeIcon'>
+           <CodeIcon/>
+           </div>
+           <div className="soundBar"> 
+          <SoundBar/>
+           </div>
+           </div>
+         
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
@@ -89,7 +94,7 @@ class Header extends Component {
                   Contact Me
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <div className="btn-bg">
                 <input type="checkbox" onChange={()=> {
                    this.props.themeChange(!JSON.parse(localStorage.getItem('theme')))
@@ -99,7 +104,7 @@ class Header extends Component {
                 <span className="off spanSwitch"><i className="fa fa-moon"></i></span>
                 </div>
                 </div>
-                </li>
+                </li> */}
             </ul>
           </header>
         </div>

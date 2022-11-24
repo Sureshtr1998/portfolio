@@ -13,6 +13,23 @@
   z-index: 1;
 }
 
+.leftHeaderSide{
+  display: flex;
+  align-items: center;
+}
+
+.codeIcon{
+  width: 40px;
+  animation: rotation 10s;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .logo_header {
   margin: 3px;
   width: auto;

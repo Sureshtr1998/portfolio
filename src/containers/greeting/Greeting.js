@@ -32,10 +32,7 @@ export default function Greeting(props) {
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("Front-End Web Developer")
-                      .pauseFor(200)
-                      .deleteAll()
-                      .typeString("Back-End Web Developer")
+                      .typeString("Web Developer")
                       .pauseFor(200)
                       .deleteAll()
                       .typeString("UI/UX Designer")
@@ -55,8 +52,8 @@ export default function Greeting(props) {
                 className="greeting-text-span subTitle"
                 style={{ color: theme.text }}>
                 <div className="entities">
-                  A Passionate <u> Web Developer </u> With Over 3 Years Of Experience.
-                  Experienced With All Stages Of The Development Cycle For Dynamic Web Projects.
+                  A passionate Web Developer based in Bangalore, India.
+                  I Design and Code Simple yet beautiful websites.
                 </div>
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />

@@ -1,5 +1,5 @@
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 //SEO Related settings
 const seo = {
@@ -198,7 +198,7 @@ const skills = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create E Commerce web app which includes payment, adding new items as well as tracking them.",
+    "My projects makes use of vast variety of latest technology tools. I've created various of Web Application for various clients which includes E-Commerce, Product Inventory, Payment System, Live Image Demo etc.",
 };
 
 const educationCards = {
@@ -263,10 +263,10 @@ const  projects = {
       description:"A Web App where user can finalize 3D models by using different types of textures, threads and patches etc and also it includes creation of cards, status, comments and Assigned to so on"
     },
     {
-      name: "Levi's",
+      name: "Project",
       img_path: "Main.png",
-      title: "Main Rivet",
-      description:"A Web App where Admins can prioritize the task for quarters along with the links for different applications"
+      title: "SpaceX(Clone)",
+      description:"A Web App where user can register and look at the rocket launches done by SpaceX, they can filter, watch videos and also can get more information about the launches (spacex-traveosoft.herokuapp.com) "
     },
     {
       name: "Jhonson and Jhonson",
@@ -404,7 +404,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "contact.jpg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with React, UI/UX Design, Mongo DB, Vue JS and Node JS.",
+      "Feel free to ping me in linkedin or drop a message in mail. I am happy to build a beautiful and effective website for you.",
   },
   addressSection: {
     title: "Address",
@@ -439,7 +439,7 @@ const socialMediaLinks = [
   // },
   {
     name: "Gmail",
-    link: "mailto:rsureshtr22i0@gmail.com",
+    link: "mailto:sureshtr22i0@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
