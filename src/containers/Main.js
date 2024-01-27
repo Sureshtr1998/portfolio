@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
-import { Route, Switch, Router } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import Header from "../components/header/Header";
 import ReactGA from "react-ga";
@@ -13,8 +13,10 @@ const Projects = lazy(() => import("../pages/projects/Projects"));
 export const history = createBrowserHistory();
 
 history.listen((location) => {
-  ReactGA.pageview(location.pathname);
-  window.scrollTo(0, 0);
+  if (location) {
+    ReactGA.pageview(location.pathname);
+    window.scrollTo(0, 0);
+  }
 });
 
 export default class Main extends Component {
@@ -31,35 +33,26 @@ export default class Main extends Component {
         <Router basename="/" history={history}>
           <Header theme={lightTheme} />
           <Suspense fallback={<Shimmer />}>
-            <Switch>
+            <Routes>
               <Route
                 path="/"
                 exact
-                render={(props) => <Home {...props} theme={this.props.theme} />}
+                element={<Home theme={this.props.theme} />}
               />
-              <Route
-                path="/home"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
+              <Route path="/home" element={<Home theme={this.props.theme} />} />
               <Route
                 path="/education"
-                render={(props) => (
-                  <Education {...props} theme={this.props.theme} />
-                )}
+                element={<Education theme={this.props.theme} />}
               />
               <Route
                 path="/contact"
-                render={(props) => (
-                  <Contact {...props} theme={this.props.theme} />
-                )}
+                element={<Contact theme={this.props.theme} />}
               />
               <Route
                 path="/projects"
-                render={(props) => (
-                  <Projects {...props} theme={this.props.theme} />
-                )}
+                element={<Projects theme={this.props.theme} />}
               />
-            </Switch>
+            </Routes>
           </Suspense>
         </Router>
       </div>
