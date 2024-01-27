@@ -21,15 +21,19 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.orange }}>
                 {greeting.title}
               </h1>
-              <div className='greeting-gif'>
-              <h1 className="greeting-sub " style={{ color: theme.grayText }}>
-                I'm <mark data-entity=""> <span style={{ color: theme.text}}>{greeting.sub} </span></mark>
-              </h1>
-              <div className='welcomeGreeting'>
-              <WelcomeImg/>
+              <div className="greeting-gif">
+                <h1 className="greeting-sub " style={{ color: theme.grayText }}>
+                  I'm{" "}
+                  <mark data-entity="">
+                    {" "}
+                    <span style={{ color: theme.text }}>{greeting.sub} </span>
+                  </mark>
+                </h1>
+                <div className="welcomeGreeting">
+                  <WelcomeImg />
+                </div>
               </div>
-              </div>
-              <h1 className="greeting-typewriter" style={{color: theme.blue}}>
+              <h1 className="greeting-typewriter" style={{ color: theme.blue }}>
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
@@ -51,19 +55,24 @@ export default function Greeting(props) {
               </h1>
               <span
                 className="greeting-text-span subTitle"
-                style={{ color: theme.text }}>
+                style={{ color: theme.text }}
+              >
                 <div className="entities">
-                  A passionate Web Developer based in Bangalore, India.
-                  I Design and Code Simple yet beautiful websites.
+                  A passionate Web Developer based in Bangalore, India. I
+                  Deliver high-performance solutions with a focus on
+                  user-centric design and seamless functionality.
                 </div>
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />
               <div className="button-greeting-div">
-                <NavLink  className="main-button" to="/contact" > Contact Me </NavLink>
+                <NavLink className="main-button" to="/contact">
+                  {" "}
+                  Contact Me{" "}
+                </NavLink>
                 <Button
                   text="See my resume"
                   newTab={true}
-                  href={require(`../../assets/certificates/Suresh_CV.pdf`)}
+                  href={require(`../../assets/certificates/Suresh-FED.pdf`)}
                 />
               </div>
             </div>

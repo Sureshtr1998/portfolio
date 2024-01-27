@@ -1,0 +1,38 @@
+.shimmer-cardList{
+  display:flex;
+}
+.shimmer-card{
+  width:98vw;
+  margin:1%;
+  &.is-loading {
+    .shimmer-image,
+    h2,
+    p {
+      background: #eee;
+      background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+      border-radius: 5px;
+      background-size: 200% 100%;
+      animation: 1.5s loading linear infinite;
+    }
+
+    .shimmer-image {
+      height: 40vh;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    h2 {
+      height: 6vh;
+    }
+
+    p {
+      height: 20vh;
+    }
+  }
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -200%;
+  }
+}

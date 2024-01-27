@@ -150,18 +150,18 @@ const skills = {
         {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
-           style: {
-             backgroundColor: "transparent",
-             color: "#228B22",
-           },
+          style: {
+            backgroundColor: "transparent",
+            color: "#228B22",
+          },
         },
         {
           skillName: "Python",
           fontAwesomeClassname: "simple-icons:python",
-           style: {
-             backgroundColor: "transparent",
-             color: "#4169E1",
-           },
+          style: {
+            backgroundColor: "transparent",
+            color: "#4169E1",
+          },
         },
       ],
     },
@@ -198,113 +198,120 @@ const skills = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. I've created various of Web Application for various clients which includes E-Commerce, Product Inventory, Payment System, Live Image Demo etc.",
+    "Led frontend development and provided backend architecture insights while actively contributing to UI design and product strategy. Developed robust web applications using React TS, Vue JS, Node JS and Three JS for 3D graphics, with a focus on code optimization and structure. Collaborated globally, managing and creating applications from scratch.",
 };
 
 const educationCards = {
- info: [
-  {
-  title: "SSLC",
-  img_path: "hvp.png",
-  name: 'HRUSHIKESH VIDYAPEETA',
-  percentage: "76.95%",
-  total:"600",
-  scored:"481",
-  description: "Qualified SSLC from Hrushikesh Vidya Peeta (Bangalore-560085) on 6th of May 2013 by the board Karnataka Secondary Education Examination Board (KSEEB)",
-},
-  {
-  title: "PUC",
-  img_path: "pes.png",
-  name: 'PES PU College',
-  percentage: "67.83%",
-  total:"600",
-  scored:"407",
-  description: "Completed 2nd PU from PES PU College (Bangalore-560050) on 10th of March 2015 by the university Department Of PRE-University Education",
-},
-  {
-  title: "Degree",
-  img_path: "dayanand.png",
-  name: 'Dayanad Sagar College',
-  percentage: "7.55 CGPA",
-  total:"5200",
-  scored:"3797",
-  description: "Graduated from Dayanad Sagar College (Bangalore-560078) on 14th of July 2018 which is affiliated to Bangalore University",
-},
-  {
-  title: "Masters",
-  img_path: "bits.png",
-  name: 'BITS PILANI',
-  percentage: "8.29 CGPA",
-  total:"",
-  scored:"",
-  description: "Masters in Mtech from BITS Pilani University through Wipro Work Integrated Learning Program(WILP) graduated on 22nd of Nov 2022",
-},
- ]
-}
+  info: [
+    {
+      title: "SSLC",
+      img_path: "hvp.png",
+      name: "HRUSHIKESH VIDYAPEETA",
+      percentage: "76.95%",
+      total: "600",
+      scored: "481",
+      description:
+        "Qualified SSLC from Hrushikesh Vidya Peeta (Bangalore-560085) on 6th of May 2013 by the board Karnataka Secondary Education Examination Board (KSEEB)",
+    },
+    {
+      title: "PUC",
+      img_path: "pes.png",
+      name: "PES PU College",
+      percentage: "67.83%",
+      total: "600",
+      scored: "407",
+      description:
+        "Completed 2nd PU from PES PU College (Bangalore-560050) on 10th of March 2015 by the university Department Of PRE-University Education",
+    },
+    {
+      title: "Degree",
+      img_path: "dayanand.png",
+      name: "Dayanad Sagar College",
+      percentage: "7.55 CGPA",
+      total: "5200",
+      scored: "3797",
+      description:
+        "Graduated from Dayanad Sagar College (Bangalore-560078) on 14th of July 2018 which is affiliated with Bangalore University",
+    },
+    {
+      title: "Masters",
+      img_path: "bits.png",
+      name: "BITS PILANI",
+      percentage: "8.29 CGPA",
+      total: "",
+      scored: "",
+      description:
+        "Masters in Mtech from BITS Pilani University through Wipro Work Integrated Learning Program(WILP) graduated on 22nd of Nov 2022",
+    },
+  ],
+};
 
-const  projects = {
-  details:[
+const textile = "Leading Global Textile Company - Wipro";
+const pharma = "Leading Global Healthcare Comapny - Wipro";
+
+const projects = {
+  details: [
     {
-      name: "Levi's",
-      img_path: "view.png",
-      title: "View Rivet",
-      description:"User can be able to view the final approved products here, it includes grouping of different products, assigning it to teams, generating logos, placement of logos on top etc"
-    },
-    {
-      name: "Levi's",
-      img_path: "user.png",
-      title: "User Rivet",
-      description:"This application provides access for different levi's user for different application along with adding them to specific groups, Admins either can approve the request or deny it "
-    },
-    {
-      name: "Levi's",
-      img_path: "dev.png",
-      title: "Dev Rivet",
-      description:"A Web App where user can finalize 3D models by using different types of textures, threads and patches etc and also it includes creation of cards, status, comments and Assigned to so on"
-    },
-    {
-      name: "Project",
-      img_path: "Main.png",
-      title: "SpaceX(Clone)",
-      description:"A Web App where user can register and look at the rocket launches done by SpaceX, they can filter, watch videos and also can get more information about the launches (spacex-traveosoft.herokuapp.com) "
-    },
-    {
-      name: "Jhonson and Jhonson",
+      name: pharma,
       img_path: "J and J.png",
-      title: "Smartfind",
-      description:"Full stack app for doing OCR to fetch the product names"
+      title: "Discover Ease",
+      description: "Full stack app for doing OCR to fetch the product names.",
     },
     {
-      name: "Project",
-      img_path: "ecomm.png",
-      title: "E- Commerce",
-      description:"Web Application where user can order a product, Add to a cart, Review the product, track the delivery items, Admin can manage the users and add new products so on. It is hosted in heroku (Wetop.herokuapp.com) "
+      name: textile,
+      img_path: "view.png",
+      title: "Final View",
+      description:
+        "Explore finalized products with grouped categories, team assignments, logo generation, and precise logo placement for a comprehensive view.",
     },
     {
-      name: "Levi's",
+      name: textile,
+      img_path: "user.png",
+      title: "Access Management",
+      description:
+        "Access management application for internal users assigns application access and group memberships; Admins approve or deny requests.",
+    },
+    {
+      name: textile,
+      img_path: "dev.png",
+      title: "3D Model",
+      description:
+        "Web App for 3D model finalization with customizable textures, threads, and patches; features card creation, status updates, comments, and assignment functionality.",
+    },
+    {
+      name: textile,
       img_path: "BOM.png",
       title: "BOM APP",
-      description:"This app is mainly used by the Vendors in order to check the amount applied to different material and which material is getting used. Which Sundry, which material there amount all these details are set in BOM app and it supplies the Vendors all these infos."
+      description:
+        "Vendor-centric app tracks material usage and applied amounts via Bill of Materials (BOM), providing insights into sundry expenses and detailed material allocation.",
+    },
+
+    {
+      name: "StepChange",
+      img_path: "Main.png",
+      title: "Internal Tool",
+      description:
+        "Empower internal users with a dynamic form builder enabling creation of intricate forms with tables, dynamic columns, formulas, text fields, and drop-downs. Additionally, manage users and tenants, assigning users to specific tenants, and upload data for insightful graph visualization using Apex charts.",
     },
     {
-      name: "Project",
+      name: "StepChange",
       img_path: "prod.png",
-      title: "Product Inventory",
-      description:"This App helps shop owners to manage their products, by tracking the number of items available in their shop along with that providing the graph which mentions the user interest on a particular product"
+      title: "B2B ESG Tool",
+      description:
+        "Developed ESG tool with user-centric dashboards, role management, performance benchmarking, and actionable insights; includes Apex charts for peer comparison, form viewing, and a vault for secure file storage, sharing, and previewing similar to Google Drive functionalities.",
     },
-    // {
-    //   client: "Levi's",
-    //   img_path: "project-06.png",
-    //   projectName: "Dev RVT",
-    //   description:"A Web App where user can finalize 3D models by using different types of textures, threads and patches etc which also includes cards, status, comments and Assigned to so on"
-    // },
-  ]
-}
+
+    {
+      name: "Projects",
+      img_path: "ecomm.png",
+      title: "LearnCraft",
+      description:
+        "ExploreSpace on Heroku offers seamless user registration, real-time SpaceX launch tracking, and detailed information. ShopHub, an e-commerce platform, streamlines user orders, cart management, reviews, and delivery tracking while providing shop owners with insightful user interest graphs.",
+    },
+  ],
+};
 //project cards
 // colors:[primary,secondary,success,danger,warning,info,light,dark,]
-
-
-
 
 //certificate cards
 const certifications = {
@@ -313,8 +320,7 @@ const certifications = {
       title: "SAP Ariba Procurement",
       subtitle: "SAP Ariba",
       logo_path: "sap.png",
-      certificate_link:
-        "https://www.youracclaim.com/go/McmClI1H",
+      certificate_link: "https://www.youracclaim.com/go/McmClI1H",
       alt_name: "SAP Ariba",
       color_code: "#000000",
     },
@@ -404,7 +410,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "contact.jpg",
     description:
-      "Feel free to ping me in linkedin or drop a message in mail. I am happy to build a beautiful and effective website for you.",
+      "Feel free to connect with me on LinkedIn or drop me a message via email. I'm excited to collaborate and create a beautiful, effective, and optimized website for you.",
   },
   addressSection: {
     title: "Address",
@@ -456,5 +462,5 @@ export {
   contactPageData,
   certifications,
   educationCards,
-  projects
+  projects,
 };
