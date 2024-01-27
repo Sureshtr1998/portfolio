@@ -1,33 +1,31 @@
-import React, { useRef, useState } from 'react'
-import styled, { keyframes } from 'styled-components'
-
-import music from "../../assets/audio/hp-theme.mp3"
+import React, { useRef, useState } from "react";
+import styled, { keyframes } from "styled-components";
 
 const Box = styled.div`
-display:flex;
-cursor:pointer;
-position:fixed;
-left:10rem;
-top:2.4rem;
-z-index:10;
-margin-left: 30px;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  left: 10rem;
+  top: 2.4rem;
+  z-index: 10;
+  margin-left: 30px;
 
-&>*:nth-child(1){
+  & > *:nth-child(1) {
     animation-delay: 0.2s;
-}
-&>*:nth-child(2){
+  }
+  & > *:nth-child(2) {
     animation-delay: 0.3s;
-}
-&>*:nth-child(3){
+  }
+  & > *:nth-child(3) {
     animation-delay: 0.4s;
-}
-&>*:nth-child(4){
+  }
+  & > *:nth-child(4) {
     animation-delay: 0.5s;
-}
-&>*:nth-child(5){
+  }
+  & > *:nth-child(5) {
     animation-delay: 0.8s;
-}
-`
+  }
+`;
 
 const play = keyframes`
 0%{
@@ -39,44 +37,42 @@ const play = keyframes`
 100%{
     transform:scaleY(1);
 }
-`
+`;
 const Line = styled.span`
-background: yellow;
-border: 1px solid black;
+  background: yellow;
+  border: 1px solid black;
 
-animation:${play} 1s ease infinite;
-animation-play-state: ${props => props.click ? "running" : "paused"};
-height: 1.4rem;
-width: 2px;
-margin:0 0.1rem
-`
+  animation: ${play} 1s ease infinite;
+  animation-play-state: ${(props) => (props.click ? "running" : "paused")};
+  height: 1.4rem;
+  width: 2px;
+  margin: 0 0.1rem;
+`;
 
 const SoundBar = () => {
+  const ref = useRef(null);
+  const [click, setClick] = useState(false);
 
-    const ref = useRef(null);
-    const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
 
-    const handleClick = () => {
-        setClick(!click);
-
-        if(!click){
-            ref.current.play();
-        }else{
-            ref.current.pause();
-        }
+    if (!click) {
+      ref.current.play();
+    } else {
+      ref.current.pause();
     }
-    return (
-        <Box onClick={() => handleClick()}>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
+  };
+  return (
+    <Box onClick={() => handleClick()}>
+      <Line click={click} />
+      <Line click={click} />
+      <Line click={click} />
+      <Line click={click} />
+      <Line click={click} />
 
+      <audio src={"/assets/audio/hp-theme.mp3"} ref={ref} loop />
+    </Box>
+  );
+};
 
-            <audio src={music} ref={ref}  loop />
-        </Box>
-    )
-}
-
-export default SoundBar
+export default SoundBar;
