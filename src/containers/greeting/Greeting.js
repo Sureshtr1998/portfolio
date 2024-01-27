@@ -1,7 +1,7 @@
 import React from "react";
 import "./Greeting.css";
 // import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
+import "../../components/button/Button.css";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import BannerImg from "./BannerImg";
@@ -69,7 +69,6 @@ export default function Greeting(props) {
                   {" "}
                   Contact Me{" "}
                 </NavLink>
-                <Button text="See my resume" newTab={true} />
                 <NavLink
                   className="main-button"
                   to="/assets/Suresh-FED.pdf"
